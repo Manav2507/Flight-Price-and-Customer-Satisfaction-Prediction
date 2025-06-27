@@ -1,65 +1,128 @@
-# Flight-Price-and-Customer-Satisfaction-Prediction
+# ✈️ Flight Price & Customer Satisfaction Prediction App
 
-## Overview
-This project consists of two machine learning models:
-1. **Flight Price Prediction** (Regression) - Predicts flight ticket prices based on various factors.
-2. **Customer Satisfaction Prediction** (Classification) - Predicts customer satisfaction levels based on feedback and service ratings.
+A dual-purpose **machine learning application** that predicts:
+- **Flight ticket prices** based on travel details (Regression)
+- **Customer satisfaction** based on service ratings and demographics (Classification)
 
-Both models are integrated into a **Streamlit web application** with separate pages for each prediction task.
+Built with **Python, MLflow**, and **Streamlit**, this end-to-end project includes EDA, model training, evaluation, and a real-time interactive interface.
 
-## Skills Utilized
-- Python
-- Machine Learning (Regression & Classification)
-- Data Analysis
-- Streamlit for web app development
-- MLflow for experiment tracking and model management
+## Demo ScreenShots:
 
-## Project 1: Flight Price Prediction
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/3_1.png)
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/3_2.png)
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/3_3.png)
 
-### Problem Statement
-Predict flight ticket prices based on factors such as departure time, airline type, and route.
+---
 
-### Business Use Cases
-- Helps travelers estimate flight costs.
-- Supports travel agencies in price optimization.
-- Assists businesses in budgeting for employee travel.
-- Aids airlines in optimizing pricing strategies.
+## 🔍 Project Overview
 
-### Approach
-1. **Data Preprocessing**
-   - Load and clean the dataset.
-   - Convert date and time columns to standard formats.
-   - Feature engineering (e.g., price per minute calculation).
-2. **Model Training**
-   - Perform Exploratory Data Analysis (EDA).
-   - Train regression models (Linear Regression, Random Forest, XGBoost).
-   - Use MLflow to log experiments, track performance (RMSE, R-squared), and manage models.
-3. **Streamlit App Development**
-   - Interactive UI for price prediction based on user inputs.
-   - Visualization of flight price trends.
+| Module                          | Type        | Goal                                      |
+|---------------------------------|-------------|-------------------------------------------|
+| 🛫 Flight Price Prediction       | Regression  | Estimate flight ticket prices             |
+| 😊 Customer Satisfaction Scoring| Classification | Predict if a customer is satisfied     |
 
-## Project 2: Customer Satisfaction Prediction
+> ✅ Both modules are accessible from separate tabs in a **Streamlit web app**.
 
-### Problem Statement
-Predict customer satisfaction levels based on various factors like demographics, service ratings, and feedback.
+---
 
-### Business Use Cases
-- Improves customer experience by identifying dissatisfaction trends.
-- Provides actionable insights for service improvement.
-- Helps marketing teams in targeting customer groups.
-- Supports management in customer retention strategies.
+## 📦 Skills & Tools Used
 
-### Approach
-1. **Data Preprocessing**
-   - Load, clean, and process the dataset.
-   - Encode categorical variables.
-   - Normalize/standardize numerical features.
-2. **Model Training**
-   - Perform Exploratory Data Analysis (EDA).
-   - Train classification models (Logistic Regression, Random Forest, Gradient Boosting).
-   - Use MLflow to log experiments, track accuracy, F1-score, and confusion matrices.
-3. **Streamlit App Development**
-   - Interactive UI for customer satisfaction prediction.
-   - Visualization of customer feedback trends.
+| Category               | Tools & Libraries                            |
+|------------------------|-----------------------------------------------|
+| Programming            | Python                                        |
+| ML Libraries           | Scikit-learn, XGBoost, RandomForest, Logistic Regression |
+| EDA & Visualization    | Pandas, Seaborn, Matplotlib                   |
+| ML Tracking            | **MLflow** for experiment tracking            |
+| Deployment             | **Streamlit** Web App                         |
+| Model Serialization    | Pickle (`.pkl`) files                         |
 
-## Pickle File : https://drive.google.com/drive/folders/1WAALLGuIr41FHk8OyWyCRVSOyFebiWev?usp=sharing
+---
+
+## 🧠 Project 1: Flight Price Prediction
+
+### 🎯 Problem Statement
+Predict the **ticket price** of a flight using features like **airline**, **departure/arrival time**, **duration**, and **route**.
+
+### 📈 Business Use Cases
+- 💸 Help users plan and budget flight bookings  
+- 📊 Support agencies with **price analytics**  
+- 🛫 Assist airlines in **dynamic pricing strategies**  
+
+### 🚀 ML Pipeline
+1. **Data Cleaning**: Nulls, duplicates, date/time formatting  
+2. **Feature Engineering**: Extract duration, stops, time-based features  
+3. **Models Used**:
+   - Linear Regression (baseline)
+   - Random Forest Regressor
+   - XGBoost Regressor (Best RMSE)
+
+4. **Evaluation Metrics**:  
+   - RMSE  
+   - R² Score  
+
+5. **Tracking**: All experiments logged with **MLflow**  
+6. **Deployment**: UI for inputting travel details and predicting ticket price
+
+---
+
+## 🧠 Project 2: Customer Satisfaction Prediction
+
+### 🎯 Problem Statement
+Classify whether a customer is **Satisfied** or **Dissatisfied** based on flight feedback and service ratings.
+
+### 📈 Business Use Cases
+- 🎯 Improve **customer retention**
+- 📣 Inform marketing segmentation  
+- 🔧 Enhance service delivery & feedback loops
+
+### 🚀 ML Pipeline
+1. **Preprocessing**:
+   - Label encoding for categorical features  
+   - Standardization of numerical fields  
+
+2. **EDA Highlights**:
+   - Service quality trends  
+   - Age group vs satisfaction
+
+3. **Models Used**:
+   - Logistic Regression  
+   - Random Forest Classifier  
+   - Gradient Boosting Classifier
+
+4. **Evaluation Metrics**:  
+   - Accuracy  
+   - F1-Score  
+   - Confusion Matrix  
+
+5. **Model Management**:  
+   - Tracked via **MLflow**  
+   - Saved using **Pickle**  
+
+6. **Deployment**: User interface for submitting feedback and getting satisfaction scores
+
+---
+
+## 📂 Dataset Features (Simplified)
+
+| Feature Category    | Sample Features                                |
+|---------------------|-------------------------------------------------|
+| Flight Details      | Airline, Route, Stops, Duration, Departure Time |
+| Customer Info       | Gender, Age, Class, Travel Type                |
+| Ratings & Feedback  | Food, Seat Comfort, Cleanliness, Check-in       |
+| Target Variables    | Price (regression), Satisfaction (classification) |
+
+---
+
+## 🎮 Streamlit App Features
+
+- Tabbed UI for each module  
+- Dropdowns for airline, class, feedback ratings  
+- Real-time predictions + model confidence  
+- Visual EDA insights (EDA plots, price distributions, satisfaction trends)
+
+---
+
+## 🧪 Model Files
+
+📁 Pre-trained `.pkl` files are available here:  
+**[🔗 Download Pickle Models](https://drive.google.com/drive/folders/1WAALLGuIr41FHk8OyWyCRVSOyFebiWev?usp=sharing)**
