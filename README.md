@@ -8,9 +8,9 @@ Built with **Python, MLflow**, and **Streamlit**, this end-to-end project includ
 
 ## Demo ScreenShots:
 
-![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/3_1.png)
-![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/3_2.png)
-![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/3_3.png)
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/website/3_1.png)
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/website/3_2.png)
+![Picture](https://github.com/Manav2507/Flight-Price-and-Customer-Satisfaction-Prediction/blob/main/img/website/3_3.png)
 
 ---
 
